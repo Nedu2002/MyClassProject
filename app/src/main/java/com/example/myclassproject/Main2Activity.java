@@ -1,9 +1,13 @@
 package com.example.myclassproject;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.Toast;
+
+import java.net.CookieHandler;
 
 public class Main2Activity extends AppCompatActivity {
 
@@ -13,36 +17,29 @@ public class Main2Activity extends AppCompatActivity {
         setContentView(R.layout.activity_main2);
     }
 
-    public void playBtn1(View v) {
+    public void showBtn1(View v) {
 
         int rId = v.getId();
-        String actiual_Id - v.getResources() .getResourceEntryName(rId);
-        int imageId = getResopurces().getIdentifier(actiual_Id, "drawable","com.example.myclassproject")
+        String actual_Id = v.getResources() .getResourceEntryName(rId);
+        int imageId = getResources() .getIdentifier(actual_Id, "drawable", "com.example.MyClassProject");
+
+        Toast.makeText(this, "you clicked" +actual_Id, Toast.LENGTH_SHORT).show();
 
         ImageView imageView = (ImageView) findViewById(R.id.imageView2);
         imageView.setImageResource(R.drawable.hair1);
+
     }
 
-    private javax.swing.table.TableColumn getResopurces() {
+    public void homeBtn(View v) {
+
+        Intent home = new Intent(Main2Activity.this, MainActivity.class);
+        CookieHandler users;
+        //profile.putExtra("UserName", users.get(product));
+
+        startActivity(home);
+
+
+
     }
 
-
-    public void playBtn2(View v) {
-
-
-        ImageView imageView = (ImageView) findViewById(R.id.imageView2);
-        imageView.setImageResource(R.drawable.hair2);
-    }
-
-    public void playBtn3(View v) {
-
-        ImageView imageView = (ImageView) findViewById(R.id.imageView2);
-        imageView.setImageResource(R.drawable.redlongwig);
-    }
-
-    public void playBtn4(View v) {
-
-        ImageView imageView = (ImageView) findViewById(R.id.imageView2);
-        imageView.setImageResource(R.drawable.redlongwig);
-    }
 }

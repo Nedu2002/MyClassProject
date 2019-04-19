@@ -4,6 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/ic_launcher_background"
+    android:onClick="playBtn1"
     tools:context=".MainActivity">
 
     <TextView
@@ -23,8 +25,8 @@
 
     <ImageButton
         android:id="@+id/imageView1"
-        android:layout_width="106dp"
-        android:layout_height="133dp"
+        android:layout_width="86dp"
+        android:layout_height="105dp"
         android:layout_marginStart="36dp"
         android:layout_marginLeft="36dp"
         android:layout_marginTop="20dp"
@@ -34,8 +36,8 @@
 
     <ImageView
         android:id="@+id/imageView2"
-        android:layout_width="128dp"
-        android:layout_height="119dp"
+        android:layout_width="115dp"
+        android:layout_height="93dp"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginEnd="40dp"
@@ -120,6 +122,7 @@
         android:layout_marginEnd="44dp"
         android:layout_marginRight="44dp"
         android:layout_marginBottom="8dp"
+        android:onClick="playBtn1"
         android:text="YAM"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -133,6 +136,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
         android:layout_marginTop="20dp"
+        android:onClick="playBtn1"
         android:text="Home"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -147,6 +151,7 @@
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginBottom="8dp"
+        android:onClick="playBtn1"
         android:text="Product"
         app:layout_constraintBottom_toTopOf="@+id/CompanyName"
         app:layout_constraintEnd_toEndOf="parent"
